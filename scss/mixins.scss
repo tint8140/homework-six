@@ -1,0 +1,12 @@
+@mixin center ($elementWidth, $elementMargin:0 auto) {
+    max-width: $elementWidth;
+    margin: $elementMargin;
+}
+
+@mixin siteButton ($btnPadding: 10px, $btnRadius: 20px, $btnBG: #79addc, $white:white) {
+padding: $btnPadding;
+border-radius: $btnRadius;
+background-color: $btnBG;
+color:$white;
+}
+

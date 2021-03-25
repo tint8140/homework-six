@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Proxima;
+  src: url(../css/fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: Gill;
+  src: url(/css/fonts/GillSans.ttf);
+}
+.change {
+  font-family: Proxima;
+  font-weight: thin;
+  font-style: normal;
+  font-size: 60px;
+}
+
+.tour header {
+  max-width: 981px;
+  margin: 20px auto 0 auto;
+  height: 200px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tours-header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tour header span {
+  text-transform: uppercase;
+  color: white;
+  font-family: Proxima;
+  font-size: 60px;
+}
+.tour .tours {
+  max-width: 818px;
+  margin: 48px auto 0 auto;
+  min-height: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 105px;
+  color: white;
+}
+.tour .tours .promo {
+  width: 236px;
+  height: 304px;
+  background-color: beige;
+  margin-top: 55px;
+  font-family: Proxima;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  position: relative;
+}
+.tour .tours .promo text {
+  margin-bottom: 70px;
+  font-size: 60px;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  text-align: center;
+}
+.tour .tours .promo p {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  position: absolute;
+  top: 100px;
+  left: 60px;
+}
+.tour .tours .promo .promoBtn {
+  padding: 10px 30px;
+  border-radius: 25px;
+  background-color: #79addc;
+  color: white;
+  height: 40px;
+  width: 133px;
+  position: absolute;
+  bottom: 50px;
+  left: 55px;
+}
+.tour .tours .promo .promoBtn p {
+  max-width: 135px;
+  width: 100%;
+  font-size: 15px;
+  font-family: Gill;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+}
+
+.promo.Israel {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-01.jpg);
+}
+
+.promo.USA {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-02.jpg);
+}
+
+.promo.AUS {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-03.jpg);
+}
+
+.promo.NewZealand {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-04.jpg);
+}
+
+.promo.France {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-05.jpg);
+}
+
+.promo.Egypt {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-06.jpg);
+}
+
+.promo.Japan {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-07.jpg);
+}
+
+.promo.Canada {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-08.jpg);
+}
+
+.promo.UAE {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-09.jpg);
+}
+
+@media all and (max-width: 1200px) {
+  .tour .tours {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+nav {
+  width: 980px;
+  height: 60px;
+  margin: 20px auto 0 auto;
+  justify-content: space-around;
+  border-bottom: solid;
+  border-color: black;
+  border-width: 2px;
+  font-family: Gill;
+  display: flex;
+}
+nav .logo {
+  width: 92px;
+  height: 42px;
+  margin-right: auto;
+  text-align: center;
+  background-image: url(../images/logo-black.png);
+}
+nav .links {
+  width: 480px;
+  height: 42px;
+  align-self: center;
+  display: flex;
+  font-size: 15px;
+}
+nav .links a {
+  text-decoration: none;
+  color: black;
+  margin: auto;
+  border-right: solid;
+  border-width: 2px;
+  padding-right: 20px;
+  border-color: #79addc;
+}
+nav .links #endBorder {
+  border: none;
+}
+
+footer {
+  width: 1280px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #79addc;
+  font-family: Gill;
+  color: #ffffff;
+}
+footer .footer-note {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: 50%;
+  margin: auto 151px;
+}
+footer .footer-note .socialmedia {
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-note .logo {
+  width: 96px;
+  height: 42px;
+  bottom: 105px;
+}
